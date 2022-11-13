@@ -1,0 +1,11 @@
+.imagen-fondo {
+    background-image: url('../assets/Pastel-de-Unicornio-Receta-paso-a-paso-1.jpeg');
+    width: 428px;
+    height: 368px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#link-pastel {
+    color: brown;
+}

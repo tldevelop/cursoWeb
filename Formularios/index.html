@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <div class="main-container aqua">
+        <div class="aux-div">
+            <h1>Formulario sin div</h1>
+            <form class="first-form">
+                <label for="userName">Nombre de usuario</label>
+                <input type="text" name="userName" id="userName" placeholder="Introduce tu nombre">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Introduce tu correo electrónico">
+                <label for="phone">Número Telefonico</label>
+                <input type="tel" name="phone" id="phone" placeholder="Introduce tu número telefonico">
+                <label for="message">Tu mensaje</label>
+                <textarea name="message" id="message" placeholder="Deja tu mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="main-container">
+        <h2>Formulario con div</h2>
+        <form class="second-form">
+            <div>
+                <input type="text" name="name" placeholder="Nombre">
+                <input type="number" name="age" placeholder="Edad">
+            </div>
+            <div>
+                <select name="sex">
+                    <option value="" selected disabled>Sexo</option>
+                    <option value="male">Hombre</option>
+                    <option value="women">Mujer</option>
+                </select>
+                <input type="date" name="nacimiento">
+            </div>
+            <div class="comida">
+                Comida favorita
+                <div>
+                    <label for="pizza">Pizza</label>
+                    <input type="radio" name="pizza" >
+                    <label for="hamburguesa">Hamburguesa</label>
+                    <input type="radio" name="hamburguesa">
+                    <label for="pollo">Pollo</label>
+                    <input type="radio" name="pollo">
+                    <label for="sushi">Sushi</label>
+                    <input type="radio" name="sushi">
+                </div>
+            </div>
+            <label for="foto">Foto de perfil</label>
+            <input type="file" name="foto">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

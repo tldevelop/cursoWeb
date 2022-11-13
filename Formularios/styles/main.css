@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.aqua {
+    background-color: aqua;
+}
+h1, h2, h3 {
+    margin: 0px;
+}
+.first-form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    padding: 24px;
+    border-radius: 48px;
+    box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.36);
+    width: 100%;
+}
+label {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+.first-form input {
+    margin-bottom: 48px;
+}
+.first-form input[type="text"],
+.first-form input[type="email"],
+.first-form input[type="tel"],
+.first-form textarea {
+    font-size: 32px;
+    color: brown;
+    padding: 12px;
+    border-radius: 24px;
+    border: none;
+}
+.first-form input[type="submit"] {
+    margin-top: 48px;
+    width: 40%;
+    border: none;
+    border-radius: 24px;
+    padding: 12px;
+    font-size: 20px;
+    background-color: brown;
+    color: #fff;
+    font-weight: 700;
+    transition: all .4s ease-in-out;
+}
+.first-form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: brown;
+    border: 2px solid brown;
+}
+.main-container {
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aux-div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin: 48px 0;
+}
+/*Estilos segundo formulario*/
+.second-form {
+    background-color: cornflowerblue;
+    width: 40%;
+    padding: 42px 24px;
+    border-radius: 48px;
+    box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.36);
+    display: flex;
+    flex-direction: column;
+}
+.second-form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.second-form div input[type="text"],
+.second-form div input[type="number"],
+.second-form div input[type="date"],
+.second-form div select {
+    width: 48%;
+    border: none;
+    padding: 12px;
+    border-radius: 42px;
+}
+.comida {
+    display: flex;
+    flex-direction: column;
+}
+.comida label {
+    margin: 0px;
+}
+.comida div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.second-form input[type="submit"] {
+    margin-top: 24px;
+    border: none;
+    padding: 12px;
+    background-color: aquamarine;
+    border-radius: 12px;
+}
