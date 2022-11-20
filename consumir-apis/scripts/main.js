@@ -1,26 +1,14 @@
-import {getUsers} from "./helper/getUsers.js"
+import printCards from "./hooks/printCards.js";
+import printComments from "./hooks/printComments.js";
+import {getUsers} from "./helper/getUsers.js";
+import {getComments} from "./helper/getComments.js";
 
 window.onload = () => {
     const cardList = document.querySelector('#card-list');
-    getUsers();
 
-    const userList = JSON.parse(localStorage.getItem('userList'));
+    //getUsers();
+    getComments();
 
-    const printCards = () => {
-        const body = userList.map(user => {
-            return (
-                `
-                    <li>
-                        <h5>${user.name}</h5>
-                        <p><b>correo:</b> ${user.email}</p>
-                        <span><b>telefono</b> ${user.phone}</span>
-                    </li>
-                `
-            )
-        }).join('')
-
-        cardList.innerHTML = body;
-    }
-
-    printCards();
+    //printCards(cardList);
+    printComments(cardList);
 }
